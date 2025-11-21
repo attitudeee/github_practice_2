@@ -23,14 +23,14 @@ def average_numbers(num1, num2):
 	return ave
 
 def check_choice(choice):
-	if choice not in ['1', '2', '3', '4']:
+	if choice not in ['1', '2', '3', '4','5']:
 		raise ValueError("無効な選択です。1から5の数字を選んでください。")
 
 def calcuate(choice, num1, num2):
 	if choice == '1':
 		result = add_numbers(num1, num2)
 		print(f"{num1} + {num2} = {result}")
-	elif choice == 2:
+	elif choice == '2':
 		result = multiply_numbers(num1, num2)
 		print(f"{num1} * {num2} = {result}")
 	elif choice == '3':
